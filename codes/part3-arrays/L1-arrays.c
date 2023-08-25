@@ -26,27 +26,25 @@ int main()
     {
         printf("$%.2lf\n", prices[a]);
     }
-    for (int a = 0; a <sizeof(prices2)/sizeof(prices[0]);a++)
+    for (int a = 0; a < sizeof(prices2) / sizeof(prices[0]); a++)
     {
         printf("$%.2lf\n", prices[a]);
     }
 
-    return 0; 
+    return 0;
 }
 
-//There is no array.length for C arrays.
+// There is no array.length for C arrays.
 
-//sizeof(arr) / sizeof(arr[0]) mean
+// int arr[]={1,2,3,5,100};
+
+// sizeof(arr) / sizeof(arr[0]) mean
 
 // sizeof(arr)
-// yields the number of bytes occupied by array arr (I suppose that arr is an array).
-// For example if you declared an array like
-// int arr[10];
-// then the compiler has to reserve memory that to hold 10 elements of type int. If for example sizeof( int ) is equal to 4 then the compiler will reserve 10 * 4 = 40 bytes of memory.
+// printf(sizeofarr); // ie 4byte*5=20byte
 
 // sizeof(arr[0])
 // gives the number of bytes occupied by one element in the array. You could use any index as for example
-//sizeof(arr[0]) it means: 1 * 4 = 4
+// printf(sizeof(arr[0]));  // ie 4byte
 
-//sizeof(arr) / sizeof(arr[0]) = 10*4 / 1*4 = 10, and it is the length of the array.
-
+// sizeof(arr) / sizeof(arr[0]) = 5*4 / 4 = 10, and it is the length of the array.
